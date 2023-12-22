@@ -13,6 +13,10 @@
         <div class="bg-cyan-100 px-3 py-3  my-10 mx-10 rounded-md">
             <h3 class="text-5xl font-semibold">Interactive </h3>
             <p class="text-xl">Geometry Genius</p>
+
+
+            <button class="inline">Blog</button>
+
         </div>
     </header>
     <!-- main -->
@@ -21,7 +25,7 @@
 
         <div class="flex">
             <!-- all card -->
-            <div class="flex grid grid-cols-3 ">
+            <div class=" grid grid-cols-3 ">
                 <!-- Triangle -->
                 <div class="  mb-3 mr-3 ml-3 border-4 border-gray-400/50 shadow-lg hover:bg-purple-300 rounded-lg">
                     <img class="pt-14 mx-auto justify-center" src="images/triangle.png" alt="">
@@ -30,133 +34,158 @@
                         <p>Area (A) = 0.5 X b X h</p>
                         <p>
                             <input type="number" class="border bg-gray-200 text-xl w-24 px-2" placeholder="base" name=""
-                                id="">
+                                id="triangle-base-field">
                             <span class="ml-2">cm</span>
                             <!--height -->
                             <input type="number" class="ml-4 border bg-gray-200 text-xl w-24 px-2" placeholder="height"
-                                name="" id="">
+                                name="" id="triangle-height-field">
                             <span class="ml-2">cm</span>
                         </p>
-                        <button class="bg-[#1090D8] text-2xl rounded-md font-medium text-white px-20 py-3 mt-5">Calculate</button>
+                        <button id="btn-tr"
+                            class="bg-[#1090D8] text-2xl rounded-md font-medium text-white px-20 py-3 mt-5">Calculate</button>
 
                     </div>
 
 
                 </div>
+
+                <!-- Rectangle -->
                 <div class="  mb-3 mr-3 ml-3 border-4 border-gray-400/50 shadow-lg hover:bg-purple-300 rounded-lg">
-                    <img class="pt-14 mx-auto justify-center" src="images/triangle.png" alt="">
+                    <img class="pt-14 mx-auto justify-center" src="images/rectangle.png" alt="">
                     <div class=" px-10 py-14">
-                        <h2>Triangle</h2>
-                        <p>Area (A) = 0.5 X b X h</p>
+                        <h2>Rectangle</h2>
+                        <p>Area (A) = w X I</p>
                         <p>
-                            <input type="number" class="border bg-gray-200 text-xl w-24 px-2" placeholder="base" name=""
-                                id="">
+                            <input id="rectangle-base-field" type="number" class="border bg-gray-200 text-xl w-24 px-2"
+                                placeholder="base" name="">
                             <span class="ml-2">cm</span>
                             <!--height -->
-                            <input type="number" class="ml-4 border bg-gray-200 text-xl w-24 px-2" placeholder="height"
-                                name="" id="">
+                            <input id="rectangle-height-field" type="number"
+                                class="ml-4 border bg-gray-200 text-xl w-24 px-2" placeholder="height" name="">
                             <span class="ml-2">cm</span>
                         </p>
-                        <button class="bg-[#1090D8] text-2xl rounded-md font-medium text-white px-20 py-3 mt-5">Calculate</button>
+                        <button id="btn-rectangle"
+                            class="bg-[#1090D8] text-2xl rounded-md font-medium text-white px-20 py-3 mt-5">Calculate</button>
 
                     </div>
 
 
                 </div>
-                <div class="  mb-3 mr-3 ml-3 border-4 border-gray-400/50 shadow-lg rounded-lg">
-                    <img class="pt-14 mx-auto justify-center" src="images/triangle.png" alt="">
+
+                <!-- Parallelogram -->
+                <div class=" mb-3 mr-3 ml-3 border-4 border-gray-400/50 shadow-lg rounded-lg">
+                    <img class="pt-14 mx-auto justify-center" src="images/parallelogram.png" alt="">
                     <div class=" px-10 py-14">
-                        <h2>Triangle</h2>
-                        <p>Area (A) = 0.5 X b X h</p>
+                        <h2>Parallelogram</h2>
+                        <p>Area (A) = b X h </p>
                         <p>
                             <input type="number" class="border bg-gray-200 text-xl w-24 px-2" placeholder="base" name=""
-                                id="">
+                                id="parallelogram-base-field">
                             <span class="ml-2">cm</span>
                             <!--height -->
                             <input type="number" class="ml-4 border bg-gray-200 text-xl w-24 px-2" placeholder="height"
-                                name="" id="">
+                                name="" id="parallelogram-heitht-field">
                             <span class="ml-2">cm</span>
                         </p>
-                        <button class="bg-[#1090D8] text-2xl rounded-md font-medium text-white px-20 py-3 mt-5">Calculate</button>
+                        <button id="parallelogram-btn" class="bg-[#1090D8] text-2xl rounded-md font-medium text-white px-20 py-3 mt-5">Calculate</button>
 
                     </div>
 
 
                 </div>
+
+                <!-- Rhombus -->
                 <div class=" mt-3 mb-3 mr-3 ml-3 border-4 border-gray-400/50 shadow-lg rounded-lg">
-                    <img class="pt-14 mx-auto justify-center" src="images/triangle.png" alt="">
+                    <img class="pt-14 mx-auto justify-center" src="images/rhombus.png" alt="">
                     <div class=" px-10 py-14">
-                        <h2>Triangle</h2>
-                        <p>Area (A) = 0.5 X b X h</p>
+                        <h2>Rhombus</h2>
+                        <p>Area (A) = 0.5 X d<sub>1</sub> X d <sub>2</sub></p>
                         <p>
                             <input type="number" class="border bg-gray-200 text-xl w-24 px-2" placeholder="base" name=""
-                                id="">
+                                id="rhombus-base-field">
                             <span class="ml-2">cm</span>
                             <!--height -->
                             <input type="number" class="ml-4 border bg-gray-200 text-xl w-24 px-2" placeholder="height"
-                                name="" id="">
+                                name="" id="rhombus-height-field">
                             <span class="ml-2">cm</span>
                         </p>
-                        <button class="bg-[#1090D8] text-2xl rounded-md font-medium text-white px-20 py-3 mt-5">Calculate</button>
+                        <button id="rhombus-btn"
+                            class=" bg-[#1090D8] text-2xl rounded-md font-medium text-white px-20 py-3 mt-5">Calculate</button>
 
                     </div>
 
 
                 </div>
+
+                <!-- Pentagon -->
                 <div class=" mt-3 mb-3 mr-3 ml-3 border-4 border-gray-400/50 shadow-lg rounded-lg">
-                    <img class="pt-14 mx-auto justify-center" src="images/triangle.png" alt="">
+                    <img class="pt-14 mx-auto justify-center" src="images/pentagon.png" alt="">
                     <div class=" px-10 py-14">
-                        <h2>Triangle</h2>
-                        <p>Area (A) = 0.5 X b X h</p>
+                        <h2>Pentagon</h2>
+                        <p>Area (A) = 0.5 X p X b</p>
                         <p>
                             <input type="number" class="border bg-gray-200 text-xl w-24 px-2" placeholder="base" name=""
-                                id="">
+                                id="pentagon-base-field">
                             <span class="ml-2">cm</span>
                             <!--height -->
                             <input type="number" class="ml-4 border bg-gray-200 text-xl w-24 px-2" placeholder="height"
-                                name="" id="">
+                                name="" id="pentagon-height-field">
                             <span class="ml-2">cm</span>
                         </p>
-                        <button class="bg-[#1090D8] text-2xl rounded-md font-medium text-white px-20 py-3 mt-5">Calculate</button>
+                        <button id="pentagon-btn"
+                            class="bg-[#1090D8] text-2xl rounded-md font-medium text-white px-20 py-3 mt-5">Calculate</button>
 
                     </div>
 
 
                 </div>
+
+                <!-- ellipse -->
                 <div class=" mt-3 mb-3 mr-3 ml-3 border-4 border-gray-400/50 shadow-lg rounded-lg">
-                    <img class="pt-14 mx-auto justify-center" src="images/triangle.png" alt="">
+                    <img class="pt-14 mx-auto justify-center" src="images/ellipse.png" alt="">
                     <div class=" px-10 py-14">
-                        <h2>Triangle</h2>
-                        <p>Area (A) = 0.5 X b X h</p>
+                        <h2>Ellipse</h2>
+                        <p>Area (A) = π X a X b</p>
                         <p>
                             <input type="number" class="border bg-gray-200 text-xl w-24 px-2" placeholder="base" name=""
-                                id="">
+                                id="ellipse-base-field">
                             <span class="ml-2">cm</span>
                             <!--height -->
                             <input type="number" class="ml-4 border bg-gray-200 text-xl w-24 px-2" placeholder="height"
-                                name="" id="">
+                                name="" id="ellipse-Height-field">
                             <span class="ml-2">cm</span>
                         </p>
-                        <button class="bg-[#1090D8] text-2xl rounded-md font-medium text-white px-20 py-3 mt-5">Calculate</button>
+                        <button id="ellipse-btn"
+                            class="bg-[#1090D8] text-2xl rounded-md font-medium text-white px-20 py-3 mt-5">Calculate</button>
 
                     </div>
 
 
                 </div>
 
+                <!-- End !! -->
 
-                
+
+
             </div>
             <!-- Area Calculator -->
 
             <div class=" mx-3 rounded-lg mb-80 border-4 border-gray-400/50 ">
-                <p class="text-4xl mt-10 decoration-solid text-[#111111CC] mx-20">Area Calculator</p>
+                <p class="text-4xl mt-10 decoration-solid text-[#111111CC] mx-20">Area Calculator <br>________________
+                </p>
                 <div class="mt-10">
-                    <h1></h1>
+                    <p id="triangle-cal">.</p>
+                    <p id="rectangle-caluc">.</p>
+                    <P id="parallelogram-calcu">.</P>
+                    <P id="rhombus-calcu">.</P>
+                    <P id="pentagon-calcu">.</P>
+                    <P id="ellipse-calcu">.</P>
+
+
                 </div>
 
             </div>
-            
+
 
 
 
@@ -172,7 +201,7 @@
 
 
 
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>
